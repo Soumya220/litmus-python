@@ -94,7 +94,15 @@ packages = [
 	'pkg/kube_aws/types',
 	'experiments/kube_aws',
 	'experiments/kube_aws/ec2_terminate_by_id',
-	'experiments/kube_aws/ec2_terminate_by_id/experiment'
+	'experiments/kube_aws/ec2_terminate_by_id/experiment',
+	'chaosLib/litmus/ec2_terminate_by_tag',
+	'chaosLib/litmus/ec2_terminate_by_tag/lib',
+	'pkg/kube_aws',
+	'pkg/kube_aws/environment',
+	'pkg/kube_aws/types',
+	'experiments/kube_aws',
+	'experiments/kube_aws/ec2_terminate_by_tag',
+	'experiments/kube_aws/ec2_terminate_by_tag/experiment'
 ]
 needs_pytest = set(['pytest', 'test']).intersection(sys.argv)
 package_data = {

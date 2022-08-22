@@ -3,20 +3,20 @@
 apiVersion: litmuschaos.io/v1alpha1
 kind: ChaosResult
 metadata:
-    name: "ec2teminatebyid-i-0e4ca84f1e8b4091c"
+    name: "ec2terminatebytag"
     namespace: "litmus"
-    labels: {'name': 'ec2teminatebyid-i-0e4ca84f1e8b4091c', 'chaosUID': ''}
+    labels: {'name': 'ec2terminatebytag', 'chaosUID': ''}
 spec:
     engine: ""
-    experiment: "ec2teminatebyid"
-    instance: "i-0e4ca84f1e8b4091c"
+    experiment: "ec2terminatebytag"
+    instance: ""
 status:
     experimentStatus: 
-        phase: "Completed"
-        verdict: "Pass"
-        probeSuccessPercentage: "100"
+        phase: "Running"
+        verdict: "Awaited"
+        probeSuccessPercentage: "Awaited"
         failStep: "N/A"
     history:
-        passedRuns: 1
+        passedRuns: 0
         failedRuns: 0
         stoppedRuns: 0

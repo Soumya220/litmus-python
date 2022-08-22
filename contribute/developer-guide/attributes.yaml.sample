@@ -1,5 +1,5 @@
 ---
-name: "ec2_terminate_by_id"
+name: "ec2_terminate_by_tag"
 version: "0.1.0"
 category: "kube_aws"
 repository: "https://github.com/resilience-engineering/litmus-python.git"
@@ -44,10 +44,10 @@ permissions:
        - "list"
 maturity: "alpha"
 maintainers:
-  - name: "gayathri"
-    email: "egayathrir112@gmail.com"
+  - name: "Soumya"
+    email: "desoumya1998@gmail.com"
 provider:
-  name: "gayathri"
+  name: "Soumya"
 minkubernetesversion: "1.12.0"
 references:
   - name: Documentation

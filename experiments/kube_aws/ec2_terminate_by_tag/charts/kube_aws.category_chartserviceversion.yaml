@@ -1,0 +1,29 @@
+apiVersion: litmuchaos.io/v1alpha1
+kind: ChartServiceVersion
+metadata:
+  name: kube_aws 
+  version: 0.1.0
+  annotations:
+    categories: kube_aws
+spec:
+  displayName:  chaos
+  categoryDescription: >
+    Stopping an EC2 instance identified by ID. 
+  experiments:
+  - ec2_terminate_by_tag
+  keywords: 
+    - "AWS" 
+    - "EC2" 
+  maintainers: 
+    - name:Soumya 
+      email:desoumya1998@gmail.com 
+  minKubeVersion: 1.12.0 
+  provider: 
+    name: soumya
+  links: 
+    - name:Documentation 
+      url:https://docs.litmuschaos.io/docs/getstarted/  
+  icon:
+    - url: 
+      mediatype: ""
+  chaosexpcrdlink: https://raw.githubusercontent.com/litmuschaos/chaos-charts/master/charts/kube_aws/experiments.yaml
